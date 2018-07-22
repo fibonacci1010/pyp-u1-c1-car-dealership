@@ -10,7 +10,7 @@ class Vehicle(object):
       return self.base_price*self.SALE_PRICE_MULTIPLIER
 
     def purchase_price(self):
-      return (self.sase_price()-self.PURCHASE_PRICE_MULTIPLIER*self.miles))
+      return (self.base_price()-self.PURCHASE_PRICE_MULTIPLIER*self.miles)
 
 class Car(Vehicle):
   SALE_PRICE_MULTIPLIER=1.2
